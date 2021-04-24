@@ -1,0 +1,27 @@
+<script>
+    $(() => {
+        $(document).ready(() => {
+            $('.sidenav').sidenav();
+        });
+    });
+</script>
+
+<nav>
+    <div class="nav-wrapper container">
+        <a href="/" class="brand-logo">大直高中資訊社</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="/">首頁</a></li>
+            <li><a href="#!">社課內容</a></li>
+            <li><a href="#!">活動成果</a></li>
+            <li><a href="#!">財產設備</a></li>
+        </ul>
+    </div>
+</nav>
+
+<ul class="sidenav" id="mobile-demo">
+    <li><a class="dropdown-trigger" href="#!" data-target="machinedropdown2">相簿<i
+                class="material-icons right">arrow_drop_down</i></a></li>
+    <li><a class="dropdown-trigger" href="#!" data-target="userlistdropdown2">借用人列表<i
+                class="material-icons right">arrow_drop_down</i></a></li>
+</ul>
