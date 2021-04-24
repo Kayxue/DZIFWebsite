@@ -20,9 +20,9 @@ from django.views.generic import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', include("home.urls")),
-    path('course/', include("course.urls")),
-    path('activity/', include("activity.urls")),
-    path("members/", include("members.urls")),
-    path("property/", include("property.urls")),
+    #path('course/', include("course.urls")),
+    #path('activity/', include("activity.urls")),
+    #path("members/", include("members.urls")),
+    #path("property/", include("property.urls")),
     path('', RedirectView.as_view(url="home/"))
 ]
